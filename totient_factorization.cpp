@@ -13,11 +13,9 @@ void phi_1_to_n(int n)
         {
             for (int j = i; j <= n; j += i)
             {
-                phi[j] -= phi[j] / i;//remove the divisors of phi[j]
-                
+                phi[j] -= phi[j] / i;//remove the divisors of phi[j]    
             }
-        }
-        
+        }    
     }
     for (int i = 1; i <= n; i++)
     {
